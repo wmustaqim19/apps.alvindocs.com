@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  app:
+    image: node:${NODE_VERSION}
+    volumes:
+      - ./src:/usr/src/app
+    ports:
+      - "${PUBLISH_PORT}:${INTERNAL_PORT}"
+    working_dir: /usr/src/app
+    command: yarn start
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge

@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      target: production
+      args:
+        NODE_VERSION: ${NODE_VERSION}
+        NGINX_VERSION: ${NGINX_VERSION}
+    volumes:
+      - app:/usr/share/nginx/html
+    ports:
+      - "${PUBLISH_PORT}:80"
+    networks:
+      - default
+
+volumes:
+  app:
+
+networks:
+  default:
+    driver: bridge
