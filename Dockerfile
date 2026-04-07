@@ -32,9 +32,9 @@ RUN yarn build
 
 # STAGE [2]
 # Bundle static assets with nginx
-FROM nginx:${NGINX_VERSION} as production
+FROM nginx:${NGINX_VERSION} AS production
 
-ENV NODE_ENV production
+ENV NODE_ENV=production
 
 # Copy built assets from builder
 COPY --from=builder /app/build /usr/share/nginx/html

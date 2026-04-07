@@ -2,5 +2,5 @@ version: '3.9'
 services:
   # app
   app:
-    image: ${PRIVATE_REGISTRY_PULL}/${PRIVATE_REGISTRY_USERNAME}/${BUILD_IMAGE_NAME_APP}
+    #image: apps-testing:latest
     restart: always

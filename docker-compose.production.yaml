@@ -2,6 +2,7 @@ version: "3.9"
 
 services:
   app:
+    image: apps-testing:latest
     build:
       context: .
       target: production
