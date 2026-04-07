@@ -276,9 +276,8 @@ const AllMenu = () => {
     { stats: 'Upload', statTitle: 'upload.alvindocs.com', icon: <Upload size={80} />, color: 'primary', onClick: handle_upload },
     { stats: 'ACS Mandiri', statTitle: 'acsmandiri.alvindocs.com', icon: <File size={80} />, color: 'success', onClick: handle_acsmandiri },
     { stats: 'Kasir Sales', statTitle: 'Aturan Kasir Khusus Sales', icon: <Box size={80} />, color: 'danger', onClick: handle_aturan_kasir_sales },
-    { stats: 'Guest Book', statTitle: 'guestbook.alvindocs.com', icon: <BookOpen size={80} />, color: 'warning', onClick: handle_guestbook },
-    { stats: 'Guest Book', statTitle: 'guestbook.alvindocs.com', icon: <BookOpen size={80} />, color: 'warning', onClick: handle_guestbook },
-     { stats: 'Kasir Sales', statTitle: 'Aturan Kasir Khusus Sales', icon: <Box size={80} />, color: 'danger', onClick: handle_aturan_kasir_sales }
+    { stats: 'Guest Book', statTitle: 'guestbook.alvindocs.com', icon: <BookOpen size={80} />, color: 'warning', onClick: handle_guestbook }
+
   ]
 
   /* ================= AMD ================= */
