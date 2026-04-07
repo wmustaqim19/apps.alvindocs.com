@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'docker-apps2' }
 
     environment {
         COMPOSE_FILE = "-f docker-compose.yaml -f docker-compose.production.yaml"
