@@ -286,6 +286,7 @@ const AllMenu = () => {
     { stats: 'File Apps', statTitle: 'files.alvindocs.com', icon: <File size={80} />, color: 'success', onClick: handle_filedata },
     { stats: 'User Manage', statTitle: 'userman.aliranmd.com', icon: <Users size={80} />, color: 'danger', onClick: handle_userman },
     // { stats: 'KPI', statTitle: 'kpi.aliranmd.com', icon: <Activity size={80} />, color: 'warning', onClick: handle_kpi_amd },
+    { stats: 'TS Plus - AMD', statTitle: 'tsplus.aliranmd.com', icon: <Package size={80} />, color: 'primary', onClick: handle_tsplus_amd },
     { stats: 'TS Plus - AMD', statTitle: 'tsplus.aliranmd.com', icon: <Package size={80} />, color: 'primary', onClick: handle_tsplus_amd }
   ]
 
