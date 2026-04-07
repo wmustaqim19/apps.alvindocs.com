@@ -8,12 +8,7 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/wmustaqim19/apps.alvindocs.com.git'
-            }
-        }
-
+        
         stage('Build Image') {
             steps {
                 sh '''
