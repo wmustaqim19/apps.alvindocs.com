@@ -12,7 +12,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 sh '''
-                docker-compose $COMPOSE_FILE --env-file $ENV_FILE build
+                docker-compose $COMPOSE_FILE --env-file $ENV_FILE build --no-cache
                 '''
             }
         }
