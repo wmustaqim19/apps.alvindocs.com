@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-                docker-compose $COMPOSE_FILE --env-file $ENV_FILE down
+                docker-compose $COMPOSE_FILE --env-file $ENV_FILE down -v
                 docker-compose $COMPOSE_FILE --env-file $ENV_FILE up -d --build
                 '''
             }
