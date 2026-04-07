@@ -1,0 +1,9 @@
+.boxyreact {
+background: '';
+cursor: pointer;
+}
+
+.boxyreact:hover {
+background-color: #fcd986;
+transition-duration: 0.3s;
+}
